@@ -139,7 +139,6 @@ body {
 .ui-container:hover ~ #popper,
 #ui-top-left:hover ~ #popper,
 #ui-bottom-right:hover ~ #popper,
-#controls-panel:hover ~ #popper,
 #about-panel:hover ~ #popper {
   opacity: 0 !important;
   transform: scale(0) !important;
@@ -147,7 +146,6 @@ body {
 
 #start-screen,
 .ui-container,
-#controls-panel,
 #about-panel {
   cursor: default !important;
 }
@@ -185,16 +183,6 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-}
-
-.circle-icon {
-  width: 20px;
-  height: 20px;
-  background: #ee829b;
-  border-radius: 50%;
-  transition:
-    background 0.3s ease,
-    box-shadow 0.3s ease;
 }
 
 .icon-btn:hover .circle-icon {
@@ -237,7 +225,6 @@ body {
   transform: translateX(-50%) translateY(-5px);
 }
 
-#controls-panel,
 #about-panel {
   position: fixed;
   border-radius: 0;
@@ -253,19 +240,6 @@ body {
     transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-#controls-panel {
-  top: 90px;
-  left: 35px;
-  width: 280px;
-  background: transparent;
-  border: none;
-  backdrop-filter: none;
-}
-
-#controls-panel h3 {
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
 #about-panel {
   bottom: 90px;
   right: 35px;
@@ -277,7 +251,6 @@ body {
   padding: 0;
 }
 
-#controls-panel:not(.hidden),
 #about-panel:not(.hidden) {
   opacity: 1;
   transform: translateY(0);
@@ -299,88 +272,6 @@ body {
   font-weight: 500;
   opacity: 0.95;
   letter-spacing: 0.3px;
-}
-
-#controls-panel h3 {
-  margin: 0 0 20px 0;
-  font-weight: 500;
-  font-size: 1.2rem;
-  letter-spacing: 0.5px;
-}
-
-.control-group {
-  margin-bottom: 20px;
-}
-
-.control-group label {
-  display: block;
-  font-size: 0.85rem;
-  opacity: 0.8;
-  margin-bottom: 8px;
-}
-
-.control-group input[type="range"] {
-  width: 100%;
-  accent-color: white;
-  cursor: pointer;
-}
-
-.color-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.color-picker {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  background: none;
-  cursor: pointer;
-  padding: 0;
-  overflow: hidden;
-}
-
-.color-picker::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-
-.color-picker::-webkit-color-swatch {
-  border: none;
-  border-radius: 50%;
-}
-
-.color-hint {
-  font-size: 0.78rem;
-  opacity: 0.55;
-  font-family: "Outfit", sans-serif;
-  text-transform: lowercase;
-}
-
-.theme-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
-}
-
-.btn-theme {
-  padding: 8px 0;
-  font-size: 0.75rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-  font-family: "Outfit", sans-serif;
-  transition: all 0.2s ease;
-}
-
-.btn-theme.active {
-  background: white;
-  color: #2c3e50;
 }
 
 #start-screen {

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/public/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Bubble Pop for Stress Relief</title>
+    <meta
+      name="description"
+      content="Experience the most satisfying bubble pop toy designed for instant stress relief and anxiety reduction. Free online fidget toy."
+    />
+    <meta
+      name="keywords"
+      content="bubble pop, stress relief, anxiety relief, satisfy, satisfying, zen, fidget, fidget toy, anti-stress, calm, relaxing, calming, peace, minimalist, meditation, digital toy, bubble burst, popping bubbles, focus, mindfulness, quiet, asmr, clean, web toy, interactive art"
+    />
+    <meta name="author" content="Pratisha Bista" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bubble Pop for Stress Relief" />
+    <meta property="og:description" content="Find your calm. Pop bubbles." />
+    <meta property="og:image" content="./assets/public/ning.jpg" />
+
+    <meta name="theme-color" content="#a1c4fd" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script type="module" src="scripts/main.js"></script>
+  </head>
+
+  <body>
+    <div id="ui-top-left" class="ui-container">
+      <button id="btn-fullscreen" class="icon-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M15 3h6v6" />
+          <path d="M9 21H3v-6" />
+          <path d="M21 3l-7 7" />
+          <path d="M3 21l7-7" />
+        </svg>
+        <span class="tooltip">Fullscreen</span>
+      </button>
+    </div>
+
+    <div id="ui-bottom-right" class="ui-container">
+      <button id="btn-info" class="icon-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+          <line x1="12" y1="17" x2="12.01" y2="17" />
+        </svg>
+        <span class="tooltip">About</span>
+      </button>
+    </div>
+
+    <div id="about-panel" class="hidden">
+      <div id="about-content" class="about-content">
+        <p>
+          Popping bubbles has proven to be one of the effective ways to release
+          stress. I wanted to create a space for this purpose. I hope you have a
+          good time.
+          <span class="credit-name">- Pratisha Bista</span>
+        </p>
+      </div>
+    </div>
+
+    <div id="start-screen">
+      <div class="start-content">
+        <div class="mascot">
+          <div class="mascot-body">
+            <div class="mascot-eye left"></div>
+            <div class="mascot-eye right"></div>
+            <div class="mascot-smile"></div>
+          </div>
+        </div>
+        <h1 id="typing-text"></h1>
+        <button id="btn-start" class="hidden">yes :)</button>
+      </div>
+    </div>
+
+    <div id="app-container"></div>
+    <div id="popper"></div>
+  </body>
+</html>
